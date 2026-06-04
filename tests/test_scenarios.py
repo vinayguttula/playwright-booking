@@ -1,3 +1,4 @@
+import re
 import pytest
 from playwright.sync_api import Page, expect
 from datetime import datetime, timedelta
@@ -66,7 +67,7 @@ def test_scenario_1(page: Page):
         page.wait_for_selector('[data-testid="property-card"]', timeout=15000)
     except:
         pass
-    expect(page.locator("h1").first).to_contain_text("Stockholm", ignore_case=True)
+    expect(page.locator("input[name=\"ss\"]").first).to_have_value(re.compile("Stockholm", re.IGNORECASE))
 
 
 def test_scenario_2(page: Page):
