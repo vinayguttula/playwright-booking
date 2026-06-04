@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "booking-automation"
+version = "0.1.0"
+description = "Booking.com UI Automation using Playwright"
+dependencies = [
+    "pytest>=8.0.0",
+    "pytest-playwright>=0.4.0"
+]

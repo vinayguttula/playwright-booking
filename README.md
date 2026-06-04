@@ -10,9 +10,9 @@ This repository contains an automated test suite written in Python using Playwri
 
 1. **Extract the ZIP file** (if you haven't already).
 2. **Open a terminal/command prompt** and navigate to the extracted folder.
-3. **Install the required dependencies**:
+3. **Install the required dependencies** via the `pyproject.toml` configuration:
    ```bash
-   pip install -r requirements.txt
+   pip install .
    ```
 4. **Install Playwright browsers**:
    ```bash
